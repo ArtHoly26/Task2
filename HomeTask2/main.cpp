@@ -11,7 +11,7 @@ using namespace std;
 //Высота(см) -> 5;
 //Объем: 337.50 куб.см.
 
-//#define Task1
+#define Task1
 //#define Task2
 //#define Task3
 
@@ -33,7 +33,7 @@ int main()
 			hour += 1;
 			min -= 60;
 		}
-		if (hour == 24) hour = min = sec = 0;
+		if (hour == 24) hour = 0;
 		
 	} while (sec > 60);
 	cout << "Часов:" << hour << " Минут: " << min << " Секунд:" << sec << endl;
